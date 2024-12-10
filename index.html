@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     Lista de Tarefas
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css"> <!-- link do HTML pro CSS -->
+    <script src="main.js"></script>
 </head>
 <body>
     <div>
-        <h1 class="title">Tarefas do dia 10 de dezembro de 2024</h1>
-        <ul> 
-            <li class="list-item">HTML</li>
-            <li class="list-item">CSS</li>
-            <li class="list-item">JAVASCRIPT</li>
-
-
+        <h1 class="titulo">Tarefas do dia 10 de dezembro de 2024</h1>
+        Lista Fixa
+        <ul> <!-- lista fixa não numerada -->
+            <li class="lista-itens">HTML</li>
+            <li class="lista-itens">CSS</li>
+            <li class="lista-itens">JAVASCRIPT</li>
         </ul>
+        Lista Dinâmica
+        <ul id="lista"></ul>
+
+
     </div>
     <div>
-        <input type="text" id="task_name" name="task_name" placeholder="Nome da Tarefa">
-        <button>ADICIONAR</button>
+        <input type="text" id="nome_tarefa" name="nome_tarefa" placeholder="Nome da Tarefa"/>
+        <button onclick="acdNovaTarefa()">ADICIONAR</button>
     </div>
 </body>
 </html>

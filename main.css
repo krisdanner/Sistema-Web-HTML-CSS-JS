@@ -2,24 +2,36 @@ body {
     background-color: #1C1C1C;
     color: #ffffff;
     font-family:'Courier New', Courier, monospace;
+    padding: 24px; /* espaçamento igual para todas as bordas */
 }
 
-.title {
+.titulo { /* classe de estilo específica */
     font-size: 38px;
     color: #00FF7F;
 }
 
-.list-item {
+.lista-itens {
     margin-bottom: 24px;
     font-size: 28px;
 }
 
 input {
-    height: 48px;
+    height: 32px;
     background-color: transparent;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
     border-color: #00FF7F;
     border-radius: 4px;
     font-size: 28px;
+    padding: 8px;
+}
 
+button {  
+    background-color:#00FF7F;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 12px;
 }
