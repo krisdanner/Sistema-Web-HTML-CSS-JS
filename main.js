@@ -9,7 +9,7 @@
 function adcNovaTarefa() {
     var texto = document.getElementById("nome_tarefa").value; // pegar a entrada de texto do usuário
 
-    if(texto.trim().length === 0) { // Usar .trim() para ignorar espaços
+    if(texto.trim().length == 0) { // Usar .trim() para ignorar espaços
         alert("Tarefa precisa ter mais de um caracter");
         return;
     }
