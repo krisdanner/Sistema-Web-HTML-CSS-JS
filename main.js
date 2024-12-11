@@ -10,7 +10,7 @@ function adcNovaTarefa() {
     //var lista = document.getElementById("lista"); // pegar o conteúdo da lista gerada dentro da variável lista
     var texto = document.getElementById("nome_tarefa").value; // pegar a entrada de texto do usuário
 
-    if(texto.length == 0) {
+    if(texto.trim().length === 0) { // Usar .trim() para ignorar espaços
         alert("Tarefa precisa ter mais de um caracter");
         return;
     }

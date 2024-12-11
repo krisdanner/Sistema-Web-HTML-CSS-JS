@@ -7,7 +7,7 @@
     Lista de Tarefas <br>
     Autor: Christian Danner
     <link rel="stylesheet" href="main.css"> <!-- link do HTML pro CSS -->
-    <script src="main.js"></script>
+    <script src="main.js"></script> <!-- link do HTML pro JS -->
 </head>
 <body>
     <div>
@@ -25,5 +25,13 @@
         <input type="text" id="nome_tarefa" name="nome_tarefa" placeholder="Nome da Tarefa"/>
         <button onclick="adcNovaTarefa()">ADICIONAR</button>
     </div>
+    <script>
+        // Capturar o evento de pressionar Enter no campo de texto
+        document.getElementById("nome_tarefa").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") { // Verificar se a tecla pressionada foi Enter
+            adcNovaTarefa(); // Adicionar a tarefa
+        }
+        });
+    </script>
 </body>
 </html>
