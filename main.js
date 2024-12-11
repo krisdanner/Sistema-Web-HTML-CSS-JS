@@ -7,7 +7,7 @@
 */
 
 function adcNovaTarefa() {
-    var lista = document.getElementById("lista"); // pegar o conteúdo da lista gerada dentro da variável lista
+    //var lista = document.getElementById("lista"); // pegar o conteúdo da lista gerada dentro da variável lista
     var texto = document.getElementById("nome_tarefa").value; // pegar a entrada de texto do usuário
 
     if(texto.length == 0) {
@@ -21,4 +21,7 @@ function adcNovaTarefa() {
     const elementoTexto = document.createTextNode(texto);
     itemLista.appendChild(elementoTexto);
     lista.appendChild(itemLista);
+
+    // Limpar o campo de entrada de texto
+    document.getElementById("nome_tarefa").value = "";
 } 
